@@ -1,0 +1,148 @@
+<section class="contact-us" id="contact-us">
+  <div class="container" >
+    <h2 class="headline contact-us__headline">We’d love to hear about your project</h2>
+    <form method="post" class="contact-us__form" @submit.prevent="checkForm" id="vue-form" novalidate>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="contact-us__field-wrapper">
+            <input type="text"
+                   name="name"
+                   placeholder="Name"
+                   class="contact-us__field"
+                   autocomplete="off"
+                   v-model="name"
+                   @input="checkFields"
+                   @blur="checkFields" >
+            <p class="contact-us__field-error" v-text="name_error"></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-form__field-wrapper">
+            <input type="email"
+                   name="email"
+                   class="contact-us__field"
+                   placeholder="Email"
+                   autocomplete="off"
+                   v-model="email"
+                   @input="checkFields"
+                   @blur="checkFields" >
+            <p class="contact-us__field-error" v-text="email_error"></p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-form__field-wrapper">
+            <input type="phone"
+                   name="phone"
+                   placeholder="380 XX XXX XX XX"
+                   class="contact-us__field"
+                   autocomplete="off"
+                   v-model="phone"
+                   @input="checkFields"
+                   @blur="checkFields" >
+            <p class="contact-us__field-error" v-text="phone_error"></p>
+          </div>
+        </div>
+      </div>
+      <textarea name="message" id="" placeholder="Message" cols="30" rows="10" class="contact-us__area" v-model="message"></textarea>
+
+      <button type="submit" class="contact-us__submit">Submit</button>
+
+    </form>
+  </div>
+</section>
+
+<div class="contact-us__map">
+  <div class="div" id="map">
+    <script>
+      function initMap() {
+        // Styles a map in night mode.
+        const map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.674, lng: -73.945},
+          zoom: 12,
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+        });
+      };
+
+    </script>
+  </div>
+</div>

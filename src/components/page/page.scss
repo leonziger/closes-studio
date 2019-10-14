@@ -1,0 +1,34 @@
+.page {
+  position: relative;
+  max-width: 1780px;
+
+  @media(max-width: 992px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: calc(50% + 85px);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    @media(max-width: 992px) {
+      left: 0;
+      background-position: center;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+  }
+
+}
