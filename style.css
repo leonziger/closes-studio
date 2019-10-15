@@ -1437,6 +1437,10 @@ button {
   right: 0;
   top: 0;
   z-index: 5; }
+  @media (max-width: 992px) {
+    .main-header {
+      padding-top: 10px;
+      padding-bottom: 5px; } }
   .main-header__container {
     display: flex;
     justify-content: space-between;
@@ -1462,23 +1466,20 @@ button {
     padding-right: 55px; }
     @media (max-width: 992px) {
       .main-header__nav {
-        transform: translateX(100%);
-        padding-left: 50px;
+        transform: translateX(1000px);
+        padding-right: 0;
         flex-direction: column;
         position: fixed;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        padding-top: 100px;
-        align-items: flex-start;
+        right: 5%;
+        left: 5%;
+        top: 10%;
+        bottom: 10%;
         background-color: pink;
-        max-width: 275px;
-        opacity: 0.8;
+        opacity: 0.9;
         transition: 0.3s;
-        z-index: 4; } }
-    @media (max-width: 375px) {
-      .main-header__nav {
-        max-width: 250px; } }
+        z-index: 4;
+        justify-content: center;
+        align-items: center; } }
     .main-header__nav-link {
       padding: 5px 10px;
       font-family: "ProximaNova", sans-serif;
