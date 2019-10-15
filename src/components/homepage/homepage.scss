@@ -29,8 +29,8 @@
     color: #333333;
     font-family: "ProximaNova", sans-serif;
     font-size: 45px;
-    font-weight: 400;
-    margin-bottom: 64px;
+    font-weight: 700;
+    margin-bottom: 53px;
   }
 
   &__subtitle {
@@ -38,7 +38,11 @@
     font-family: "Corinthia", sans-serif;
     font-size: 44px;
     font-weight: 400;
-    margin-bottom: 54px;
+    margin-bottom: 49px;
+
+    @media(max-width: 992px) {
+      text-shadow: #000 1px 1px 1px;
+    }
   }
 
   &__description {
@@ -48,7 +52,11 @@
     font-weight: 300;
     max-width: 320px;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
+
+    @media(max-width: 992px) {
+      font-weight: 500;
+    }
   }
 
   &__button {
@@ -56,6 +64,8 @@
 
     @media(max-width: 992px) {
       align-self: center;
+      font-weight: 500;
+      border-width: 2px;
     }
   }
 

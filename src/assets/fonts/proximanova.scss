@@ -22,6 +22,18 @@
 
 @font-face {
   font-family: 'ProximaNova';
+  src: url('./proximanova/proximanova-bold.eot');
+  src: local('ProximaNova'), local('proximanova'),
+  url('./proximanova/proximanova-bold.eot?#iefix') format('embedded-opentype'),
+  url('./proximanova/proximanova-bold.woff') format('woff'),
+  url('./proximanova/proximanova-bold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ProximaNova';
   src: url('./proximanova/proximanova-light.eot');
   src: local('ProximaNova'), local('proximanova'),
   url('./proximanova/proximanova-light.eot?#iefix') format('embedded-opentype'),

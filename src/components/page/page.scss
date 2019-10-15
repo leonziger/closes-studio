@@ -1,6 +1,8 @@
 .page {
   position: relative;
-  max-width: 1780px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1640px;
 
   @media(max-width: 992px) {
     padding-top: 10px;
@@ -11,7 +13,7 @@
     display: block;
     content: '';
     position: absolute;
-    left: calc(50% + 85px);
+    left: calc(50% + 15px);
     top: 0;
     right: 0;
     bottom: 0;

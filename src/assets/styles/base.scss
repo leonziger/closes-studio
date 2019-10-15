@@ -102,6 +102,9 @@ button {
   color: #2c85b8;
 }
 
+.pink {
+  color: #ff4d87;
+}
 
 .h1 {
   font-family: 'Helvetica-6-Medium', sans-serif;
@@ -144,10 +147,8 @@ button {
 }
 
 .container {
-  //outline: 1px solid red;
-
   @media(min-width: 1200px) {
-    max-width: 1200px;
+    width: 1200px;
 
   }
 
@@ -156,32 +157,4 @@ button {
   }
 }
 
-.headline {
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 176px;
-  font-family: 'Gotham', sans-serif;
-  font-size: 38px;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 36px;
-  flex-wrap: wrap;
-  margin-bottom: 33px;
-  text-align: center;
 
-  @media(max-width: 992px) {
-    margin-left: 0;
-  }
-
-  @media(max-width: 576px) {
-    font-size: 30px;
-    background: none;
-    min-height: 50px;
-    height: auto;
-    margin-bottom: 0;
-  }
-}
