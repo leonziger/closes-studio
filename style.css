@@ -1144,13 +1144,12 @@ button {
 .pink {
   color: #f32e3c; }
 
-.container {
-  outline: 1px solid blue; }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1200px; } }
-  .container:before, .container:after {
-    display: none; }
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px; } }
+
+.container:before, .container:after {
+  display: none; }
 
 /*!
  * fullPage 3.0.7
@@ -1572,8 +1571,7 @@ body.fp-viewing-contacts-page a:nth-child(7) {
   align-items: center;
   padding-top: 5px;
   padding-bottom: 15px;
-  width: 100%;
-  outline: 1px solid red; }
+  width: 100%; }
   @media (max-width: 992px) {
     .content {
       justify-content: center; } }
@@ -1605,7 +1603,7 @@ body.fp-viewing-contacts-page a:nth-child(7) {
     margin-bottom: 30px; }
     @media (max-width: 992px) {
       .content__title {
-        font-size: 30px; } }
+        font-size: 36px; } }
   .content__subtitle {
     color: #ff5b97;
     font-family: "Corinthia", sans-serif;
