@@ -1,13 +1,13 @@
-.homepage {
+.uniqueness {
   min-height: 100vh;
   display: flex;
 
   &:after {
-    background-image: url(homepage_bg.jpg);
+    background-image: url(uniqueness_bg.jpg);
 
     @media(max-width: 992px) {
       background-image: linear-gradient(to top, rgba(#fff, 0.7), rgba(#fff, 0.7)),
-      url(homepage_bg.jpg);
+      url(uniqueness_bg.jpg);
     }
   }
 
@@ -24,4 +24,5 @@
       z-index: 2;
     }
   }
+
 }

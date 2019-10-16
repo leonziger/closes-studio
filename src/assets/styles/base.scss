@@ -14,12 +14,12 @@
 }
 
 ::placeholder {
-  color: #ffffff;
-  font-family: 'GothamBook', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  letter-spacing: 0.3px;
-  //padding: 15px 25px;
+  color: #868686;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 60px;
+  letter-spacing: 0.12px;
 }
 
 
@@ -39,7 +39,7 @@ body {
 }
 
 html {
-  font: 300 16px "Proxima Nova", sans-serif;
+  font: 300 16px "ProximaNova", sans-serif;
   color: #333333;
 }
 
@@ -103,47 +103,7 @@ button {
 }
 
 .pink {
-  color: #ff4d87;
-}
-
-.h1 {
-  font-family: 'Helvetica-6-Medium', sans-serif;
-  font-size: 28px;
-  text-transform: uppercase;
-  letter-spacing: -0.5px;
-
-  @media(max-width: 768px) {
-    text-align: center;
-    font-size: 24px;
-    line-height: 1.2;
-  }
-
-  @media(max-width: 576px) {
-    font-size: 20px;
-  }
-
-  @media(max-width: 375px) {
-    font-size: 16px;
-  }
-}
-
-.h2 {
-  font-family: 'Helvetica-8-Heavy', sans-serif;
-  font-size: 37px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: -2px;
-  margin-bottom: -9px;
-  text-align: center;
-
-  @media(max-width: 576px) {
-    font-size: 30px;
-    margin-bottom: 0;
-  }
-
-  @media(max-width: 375px) {
-    font-size: 24px;
-  }
+  color: #f32e3c;
 }
 
 .container {

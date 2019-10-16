@@ -1,0 +1,19 @@
+@import '~fullpage.js/dist/fullpage.min';
+
+
+body {
+  &.fp-viewing-home-page a:nth-child(1),
+  &.fp-viewing-exlusive-page a:nth-child(2),
+  &.fp-viewing-uniqueness-page a:nth-child(3),
+  &.fp-viewing-responsiveness-page a:nth-child(4),
+  &.fp-viewing-packaging-page a:nth-child(5),
+  &.fp-viewing-delivery-page a:nth-child(6),
+  &.fp-viewing-contacts-page a:nth-child(7)
+  {
+    color: #f32e3c;
+  }
+}
+
+#fp-nav ul li a span {
+  background: #f32e3c;
+}

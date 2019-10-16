@@ -6,10 +6,18 @@
     <title>Ателье одинаковой одежды для мам и дочек</title>
   </head>
   <body>
-    {{> components/main-header/main-header }}
+
+  {{> components/main-header/main-header }}
+  <div id="fullpage">
     {{> components/homepage/homepage }}
-    {{> components/scroll-up/scroll-up }}
-    <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOijcuH7Hh6qXzOxpXGiVs_O6u-d5oAfE&callback=initMap" async defer></script>
+    {{> components/exclusive/exclusive }}
+    {{> components/uniqueness/uniqueness }}
+    {{> components/responsiveness/responsiveness }}
+    {{> components/packaging/packaging }}
+    {{> components/delivery/delivery }}
+    {{> components/contacts/contacts }}
+  </div>
+  {{> components/scroll-up/scroll-up }}
+
   </body>
 </html>
