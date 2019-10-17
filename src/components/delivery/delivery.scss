@@ -1,0 +1,33 @@
+.delivery {
+  min-height: 100vh;
+  display: flex;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+
+    @media(max-width: 1160px) {
+      margin-right: 0;
+      margin-left: 0;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+
+  &__map {
+    background-image: url(delivery_map.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: inherit;
+    min-height: 465px;
+    height: 100%;
+    background-size: auto;
+
+    @media(max-width: 992px) {
+      background-image: linear-gradient(to top, rgba(#fff, 0.7), rgba(#fff, 0.7)),
+      url(delivery_map.png);
+    }
+  }
+
+}
