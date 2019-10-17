@@ -1579,6 +1579,8 @@ body.fp-viewing-contacts-page a:nth-child(7) {
     display: flex;
     align-items: stretch;
     flex-direction: column; }
+    .content__text_center {
+      align-items: center; }
     .content__text_right {
       text-align: right;
       margin-right: -30px; }
@@ -1773,6 +1775,31 @@ body.fp-viewing-contacts-page a:nth-child(7) {
         top: 0;
         background-color: rgba(255, 255, 255, 0.7);
         z-index: 2; } }
+
+.delivery {
+  min-height: 100vh;
+  display: flex; }
+  .delivery__container {
+    display: flex;
+    justify-content: center; }
+    @media (max-width: 1160px) {
+      .delivery__container {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%; } }
+  .delivery__map {
+    background-image: url(images/delivery_map.e0e448308075b56feef1ff11d5984a28.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: inherit;
+    min-height: 465px;
+    height: 100%;
+    background-size: auto; }
+    @media (max-width: 992px) {
+      .delivery__map {
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(images/delivery_map.e0e448308075b56feef1ff11d5984a28.png); } }
 
 .contacts {
   min-height: 100vh;
