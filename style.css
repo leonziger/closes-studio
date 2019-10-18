@@ -1144,6 +1144,9 @@ button {
 .pink {
   color: #f32e3c; }
 
+.bold {
+  font-weight: 700; }
+
 @media (min-width: 1200px) {
   .container {
     width: 1200px; } }
@@ -1535,7 +1538,8 @@ body.fp-viewing-contacts-page a:nth-child(7) {
   @media (max-width: 992px) {
     .page {
       padding-top: 10px;
-      padding-bottom: 10px; } }
+      padding-bottom: 10px;
+      border-bottom: 1px solid lightpink; } }
   .page_left:after {
     left: -15px !important;
     right: calc(50% - 15px) !important;
@@ -1601,7 +1605,7 @@ body.fp-viewing-contacts-page a:nth-child(7) {
   .content__title {
     color: #333333;
     font-family: "ProximaNova", sans-serif;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 30px; }
     @media (max-width: 992px) {
@@ -1657,6 +1661,9 @@ body.fp-viewing-contacts-page a:nth-child(7) {
     .main-header {
       padding-top: 10px;
       padding-bottom: 5px; } }
+  @media (max-width: 992px) {
+    .main-header {
+      background-color: #fff; } }
   .main-header__container {
     display: flex;
     justify-content: space-between;
@@ -1725,6 +1732,8 @@ body.fp-viewing-contacts-page a:nth-child(7) {
     @media (max-width: 992px) {
       .homepage:after {
         background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(images/homepage_bg.d61f45c1c62a604f5b1041572e656916.jpg); } }
+  .homepage__title {
+    font-size: 45px; }
   .homepage__opacity {
     display: flex; }
     @media (max-width: 992px) {
@@ -1777,7 +1786,7 @@ body.fp-viewing-contacts-page a:nth-child(7) {
         background-color: rgba(255, 255, 255, 0.7);
         z-index: 2; } }
 
-.responsiveness__healine {
+.responsiveness__headline {
   margin-bottom: 50px; }
 
 .responsiveness__items {
@@ -1789,7 +1798,11 @@ body.fp-viewing-contacts-page a:nth-child(7) {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  font-size: 15px; }
+  @media (max-width: 768px) {
+    .responsiveness__item {
+      font-size: 16px; } }
   .responsiveness__item-icon {
     margin-bottom: 24px; }
   .responsiveness__item-title {
@@ -1802,6 +1815,74 @@ body.fp-viewing-contacts-page a:nth-child(7) {
     padding: 0 15px; }
     @media (max-width: 768px) {
       .responsiveness__item-description {
+        max-width: 100%; } }
+
+.packaging__headline {
+  margin-bottom: 27px; }
+
+.packaging__subtitle {
+  color: #333333;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 180px;
+  text-align: center;
+  margin: 0 auto 50px; }
+
+.packaging__items {
+  display: flex;
+  flex-wrap: wrap; }
+
+.packaging__pack {
+  margin-bottom: 50px; }
+  @media (max-width: 480px) {
+    .packaging__pack {
+      display: none; } }
+
+.packaging__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  font-size: 15px; }
+  @media (max-width: 768px) {
+    .packaging__item {
+      font-size: 16px; } }
+  .packaging__item_left {
+    align-items: flex-end; }
+    .packaging__item_left .packaging__item-icon {
+      align-self: flex-end; }
+    .packaging__item_left .packaging__item-description {
+      text-align: right; }
+    @media (max-width: 768px) {
+      .packaging__item_left {
+        align-items: center; }
+        .packaging__item_left .packaging__item-icon {
+          align-self: center; }
+        .packaging__item_left .packaging__item-description {
+          text-align: center; } }
+  .packaging__item_right {
+    align-items: flex-start; }
+    .packaging__item_right .packaging__item-icon {
+      align-self: flex-start; }
+    .packaging__item_right .packaging__item-description {
+      text-align: left; }
+    @media (max-width: 768px) {
+      .packaging__item_right {
+        align-items: center; }
+        .packaging__item_right .packaging__item-icon {
+          align-self: center; }
+        .packaging__item_right .packaging__item-description {
+          text-align: center; } }
+  .packaging__item-icon {
+    margin-bottom: 24px; }
+  .packaging__item-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center; }
+  .packaging__item-description {
+    min-height: 50px; }
+    @media (max-width: 768px) {
+      .packaging__item-description {
         max-width: 100%; } }
 
 .delivery {
@@ -1854,7 +1935,7 @@ body.fp-viewing-contacts-page a:nth-child(7) {
     max-width: 185px; }
     .contacts-form__field {
       width: 100%;
-      height: 30px;
+      height: 50px;
       border-bottom: 1px solid #ddd;
       margin-bottom: 15px;
       padding: 10px 5px;
