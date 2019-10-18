@@ -1580,7 +1580,8 @@ body.fp-viewing-contacts-page a:nth-child(7) {
     align-items: stretch;
     flex-direction: column; }
     .content__text_center {
-      align-items: center; }
+      align-items: center;
+      text-align: center; }
     .content__text_right {
       text-align: right;
       margin-right: -30px; }
@@ -1775,6 +1776,33 @@ body.fp-viewing-contacts-page a:nth-child(7) {
         top: 0;
         background-color: rgba(255, 255, 255, 0.7);
         z-index: 2; } }
+
+.responsiveness__healine {
+  margin-bottom: 50px; }
+
+.responsiveness__items {
+  display: flex;
+  flex-wrap: wrap; }
+
+.responsiveness__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 50px; }
+  .responsiveness__item-icon {
+    margin-bottom: 24px; }
+  .responsiveness__item-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center; }
+  .responsiveness__item-description {
+    max-width: 200px;
+    text-align: center;
+    padding: 0 15px; }
+    @media (max-width: 768px) {
+      .responsiveness__item-description {
+        max-width: 100%; } }
 
 .delivery {
   min-height: 100vh;
