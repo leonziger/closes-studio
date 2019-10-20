@@ -6,12 +6,22 @@
         <div class="content__description contacts__description">Просто оставьте нам фотографию или эскиз изделия
           и мы перезвоним вам и скажем примерную цену и срок изготовления.</div>
 
-        <form action="" class="contacts-form" id="contact-form">
+        <form action="" class="contacts-form" id="contact-form" @submit.prevent="checkForm" novalidate>
           <div class="contacts-form__field-wrap">
-            <input type="text" name="name" class="contacts-form__field" placeholder="Ваше имя" autocomplete="off">
+            <input type="text" name="name" class="contacts-form__field" placeholder="Ваше имя"
+               autocomplete="off"
+               v-model="name"
+               @input="checkFields"
+               @blur="checkFields" >
+            <p class="contacts-form__field-error" v-text="name_error"></p>
           </div>
           <div class="contacts-form__field-wrap">
-            <input type="tel" name="phone" class="contacts-form__field" placeholder="Ваш телефон" autocomplete="off">
+            <input type="text" name="email" class="contacts-form__field" placeholder="Ваш email"
+                   autocomplete="off"
+                   v-model="email"
+                   @input="checkFields"
+                   @blur="checkFields" >
+            <p class="contacts-form__field-error" v-text="email_error"></p>
           </div>
           <button type="submit" class="button content__button contacts-form__button">Оставить заявку</button>
         </form>

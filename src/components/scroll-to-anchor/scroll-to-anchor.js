@@ -10,10 +10,6 @@ if ( screenWidth <= 991) {
     const link = '#' + $(this).attr('data-id');
     let coordinates = $(link).offset().top;
 
-    // if ( mainHeaderPosition === 'fixed') {
-    //   coordinates = $(link).offset().top-$('.main-header').height();
-    // }
-
     $('html, body').animate({scrollTop:coordinates}, 1000);
     return false;
   });
