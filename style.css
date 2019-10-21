@@ -1098,7 +1098,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #222222; }
+  color: #333333;
+  background-color: #fff; }
 
 img {
   max-width: 100%;
@@ -1803,7 +1804,8 @@ body.fp-viewing-contacts-page a:nth-child(7) {
         transition: 0.3s;
         z-index: 4;
         justify-content: center;
-        align-items: center; } }
+        align-items: center;
+        overflow: scroll; } }
     .main-header__nav-link {
       padding: 5px 10px;
       font-family: "ProximaNova", sans-serif;
