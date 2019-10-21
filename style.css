@@ -1758,7 +1758,8 @@ body.fp-viewing-contacts-page a:nth-child(7) {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 5; }
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.7); }
   @media (max-width: 1366px) {
     .main-header {
       padding-top: 10px;
