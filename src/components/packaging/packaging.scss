@@ -11,6 +11,10 @@
     max-width: 180px;
     text-align: center;
     margin: 0 auto 50px;
+
+    @media(max-width: 992px) {
+      line-height: 1.25;
+    }
   }
 
   &__items {
